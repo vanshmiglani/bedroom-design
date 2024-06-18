@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.69), rgb(0, 0, 0, 0.69)), url(back.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.txt {
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-style: italic;
+
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+    color: whitesmoke;
+    position: relative;
+    cursor: pointer;
+
+}
+
+ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: lightblue;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-radius: 2px;
+    transition: 0.2s ease;
+    opacity: 0.8;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 33vh;
+}
+ .main2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+ }
+h2 {
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 10% auto;
+    font-size: 4rem;
+}
+h4{
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.txt2{
+    color: whitesmoke;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   justify-content: center;
+   align-items: center;
+    margin:  0px auto;
+    font-size: 1rem;
+    align-items: center;
+
+
+}
+
+button{
+    color : white;
+background: transparent;
+border: 2px solid #009688;
+border-radius: 25px;
+
+padding: 10px 35px ;
+cursor: pointer;
+margin: 20px 10px;
+position: relative;
+overflow: hidden;
+}
+
+.btnn{
+    display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+button:hover .first{
+    width : 100%;
+    transition: 0.4s ease;
+ 
+  
+}
+button:hover{
+    border: none;
+}
+button::after{
+    width : 100%;
+}
+
+.first{
+background-color: #009688;
+height : 100%;
+border-radius: 25px;
+position: absolute;
+width : 0%;
+left: 0;
+bottom: 0;
+z-index : -1;
+}
